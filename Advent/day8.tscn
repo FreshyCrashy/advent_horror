@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://tree.tscn" type="PackedScene" id=1]
+[ext_resource path="res://day8.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Puzzle1Input" type="Node" parent="."]
+
+[node name="trees" type="Node" parent="."]
+
+[node name="tree" parent="." instance=ExtResource( 1 )]
